@@ -20,7 +20,7 @@ const WASMContext = createContext<IWasmContext>(initial)
 /**
  * @ref https://github.com/satelllte/nextjs-wasm/blob/main/src/context/WASM.tsx 
  */
-export const WASMContextProvider: React.FC<WasmContextProviderProps> = ({
+export const WasmContextProvider: React.FC<WasmContextProviderProps> = ({
   children
 }) => {
 
