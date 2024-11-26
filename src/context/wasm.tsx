@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 import { useMountEffectOnce } from "@/hooks/useMountEffectOnce";
 
 interface IWasmContext {
-  wasm?: typeof import("@/lib/wasm");
+  wasm?: typeof import("@/lib/otp");
   error?: Error;
 }
 
@@ -29,7 +29,7 @@ export const WasmContextProvider: React.FC<WasmContextProviderProps> = ({
   useMountEffectOnce(() => {
     (async () => {
       try {
-        const wasm = await import("@/lib/wasm");
+        const wasm = await import("@/lib/otp");
         await wasm.default();
 
         setState({

@@ -1,0 +1,14 @@
+{
+  "name": "otp-wasm",
+  "version": "0.1.0",
+  "files": [
+    "otp_wasm_bg.wasm",
+    "otp_wasm.js",
+    "otp_wasm.d.ts"
+  ],
+  "module": "otp_wasm.js",
+  "types": "otp_wasm.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
